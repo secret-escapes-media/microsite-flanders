@@ -1,0 +1,15 @@
+<div class="banner">
+  <div class="site-header__offset"></div>
+  <div class="banner__bg" style="background-image: url('{{site.img}}/img.jpg')"></div>
+  <div class="banner__wrap">
+    {% if page.banner.content %}
+      {{page.banner.content | liquify}}
+    {% else %}
+      <div class="container container--no-padding text--center">
+        {% if page.banner.title-sup %}<h2 class="sub-title">{{page.banner.title-sup}}</h2>{% endif %}
+        <h1 class="banner-title">{% if page.banner.title %}{{page.banner.title}}{% else %}{{page.title}}{% endif %}</h1>
+        {% if page.banner.title-sub %}<h2 class="sub-title">{{page.banner.title-sub}}</h2>{% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
