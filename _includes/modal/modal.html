@@ -24,5 +24,41 @@
       {% endif %}
     {% endfor %}
 
+    {% if page.id == "locals" %}  {% endif %}
+    {% for interview in page.interviews %}
+      <div class="modal modal--interview is-closed" data-modal-id="{{interview.id}}" data-modal-group="interview">
+        <div class="js-close-modal modal__close"></div>
+        <div class="js-modal-nav modal__nav modal__nav--next" data-nav-direction="next"></div>
+        <div class="js-modal-nav modal__nav modal__nav--previous" data-nav-direction="previous"></div>
+        <div class="modal__content">
+          <div class="vpad--xs">
+            <div class="row row--gutters-lg">
+              <div class="col col--4">
+                <div class="width width--xs">
+                  <div class="bg-img bg-img--circle" style="background-image: url('{{site.img}}/img.jpg');"></div>
+                </div>
+                <div class="space--sm"></div>
+                <div class="boxpad--lg bg--light">
+                  <h2 class="title title--xxs">{{interview.name}}</h2>
+                  <div class="space--xxs"></div>
+                  <div>{{interview.introduction}}</div>
+                </div>
+              </div>
+              <div class="col col--8">
+                <div class="content-spacing">
+                  <p class="text--xxl">{{interview.summary}}</p>
+                  <ul>
+                    {% for poi in interview.pois %}
+                    <li>{{poi.content}}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
   </div>
 </div>

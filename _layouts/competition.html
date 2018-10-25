@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include page/head.html %}
+
+  <body>
+
+    {% include components/tracking.html %}
+
+    {% include page/header.html %}
+
+    <div class="bg--fade" style="background-image: url('{{site.img}}/img.jpg'); background-color: #0a1d4b;">
+      <div class="site-header__offset"></div>
+      {% include nav/site.html %}
+
+        <div class="container">
+
+          <div class="width width--xl text--center content-spacing">
+            <div class="space--xxxxl"></div>
+            <div class="space--xl"></div>
+            <h1 class="title title--xxl text--white">{{page.title}}</h1>
+            <div class="space--xxxxl"></div>
+            <div class="space--xl"></div>
+          </div>
+
+          <div class="width width--xxl bg--white boxpad--xl">
+          <p class="width width--lg text--lg">{{page.intro}}</p>
+            <div class="vpad--sm">
+              <div class="row row--4-4-4 row--gutters-sm">
+                <div class="col">
+                  <div class="bg-img bg-img--3-2 bg-img--lg-1-1" style="background-image: url('{{site.img}}/img.jpg');"></div>
+                </div>
+                <div class="col">
+                  <div class="bg-img bg-img--3-2 bg-img--lg-1-1" style="background-image: url('{{site.img}}/img.jpg');"></div>
+                </div>
+                <div class="col">
+                  <div class="bg-img bg-img--3-2 bg-img--lg-1-1" style="background-image: url('{{site.img}}/img.jpg');"></div>
+                </div>
+              </div>
+            </div>
+            <p class="width width--lg text--lg">{{page.intro}}</p>
+            <div class="space--md width width--lg text--center">
+              <p class="text--xxl"><strong>To Enter book a break to Bruges and you'll be automatically entered</strong></p>
+              <div class="space--sm"></div>
+              <a href="https://www.secretescapes.com/search/search?query=Bruges%2C+Belgium" class="btn btn--lg btn--orange">See Bruges Offers</a>
+            </div>
+          </div>
+
+          <div class="space--xxxxl"></div>
+          <div class="space--xxxxl"></div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    {% include page/footer.html %}
+
+  </body>
+
+</html>

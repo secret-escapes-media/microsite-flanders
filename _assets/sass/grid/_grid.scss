@@ -50,6 +50,7 @@
   &--justify       { justify-content: space-between; }
   &--valign-bottom { align-items: flex-end; }
   &--valign-center { align-items: center; }
+  &--reverse       { flex-direction: row-reverse; }
 
 
   ////////////////////////////////////////////// row column widths & breakpoints
@@ -157,11 +158,12 @@
 .width {
   margin-right: auto;
   margin-left: auto;
-  &--xxs { max-width: ($sm / 3); }
-  &--xs  { max-width: ($sm / 2); }
-  &--sm  { max-width: $sm; }
-  &--md  { max-width: $md; }
-  &--lg  { max-width: $lg; }
-  &--xl  { max-width: $xl; }
-  &--xxl { max-width: $xxl; }
+  &--xxs       { max-width: ($sm / 3); }
+  &--xs        { max-width: ($sm / 2); }
+  &--sm        { max-width: $sm; }
+  &--md        { max-width: $md; }
+  &--lg        { max-width: $lg; }
+  &--xl        { max-width: $xl; }
+  &--xxl       { max-width: $xxl; }
+  &--interview { max-width: 250px; }
 }

@@ -1,0 +1,152 @@
+---
+layout: default
+id: cities
+title: Cities
+nav: true
+nav-order: 3
+content-pages: true
+intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sit, recusandae quod quae nemo dolor ipsum architecto, rem eos a perferendis et officiis cumque nam, tempore temporibus! Tempora, eaque, quos.
+
+sections:
+
+  - id: bruges
+    title: Bruges
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quas provident soluta nam, ipsa officia perspiciatis. Alias nulla dolor error, assumenda deleniti autem esse maxime eum sed nesciunt recusandae quos accusamus harum aliquid velit iusto aperiam praesentium eveniet aspernatur quidem explicabo sunt laboriosam, ut! Deleniti autem itaque distinctio porro error optio dicta reiciendis, nobis cupiditate ratione, facilis in hic molestias.
+    pois:
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi.
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, quaerat.
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, consequatur.
+    locals:
+      - id: "#local-id"
+      - id: "#local-id"
+
+  - id: ghent
+    title: Ghent
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor aut in, perspiciatis et, quo molestiae id corrupti aperiam dignissimos aliquid alias nulla. Commodi aliquid cum modi neque, quia enim.
+    pois:
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi.
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, quaerat.
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, consequatur.
+    locals:
+      - id: "#local-id"
+
+  - id: antwerp
+    title: Antwerp
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor aut in, perspiciatis et, quo molestiae id corrupti aperiam dignissimos aliquid alias nulla. Commodi aliquid cum modi neque, quia enim.
+    pois:
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi.
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, quaerat.
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, consequatur.
+
+  - id: mechelen
+    title: Mechelen
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor aut in, perspiciatis et, quo molestiae id corrupti aperiam dignissimos aliquid alias nulla. Commodi aliquid cum modi neque, quia enim.
+    pois:
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi.
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, quaerat.
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, consequatur.
+    locals:
+      - id: "#local-id"
+
+  - id: leuven
+    title: Leuven
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolor aut in, perspiciatis et, quo molestiae id corrupti aperiam dignissimos aliquid alias nulla. Commodi aliquid cum modi neque, quia enim.
+    pois:
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi.
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, quaerat.
+      - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, consequatur.
+---
+
+<div class="vpad--xl bg--light">
+  <div class="container">
+    <div class="width width--lg text--center text--xl">
+      <p>{{page.intro}}</p>
+    </div>
+  </div>
+</div>
+
+{% include nav/page.html content=page.sections %}
+
+{% for section in page.sections %}
+
+  {% if section.id == "bruges" %}
+    <!-- larger layout for Bruges -->
+    <div id="{{section.id}}" class="vpad--xxl">
+      <div class="container">
+        <div class="text--center">
+          <h2 class="title title--xxl">{{section.title}}</h2>
+        </div>
+        <div class="space--xs"></div>
+        <div class="row row--gutters-sm">
+          <div class="col col--8">
+            <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');"></div>
+          </div>
+          <div class="col col--4">
+            <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');"></div>
+            <div class="space--sm"></div>
+            <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');"></div>
+          </div>
+        </div>
+        <div class="vpad--lg width width--xl">
+          <div class="row">
+            <div class="col col--7">
+              <p class="text--xl">{{section.description}}</p>
+            </div>
+            <div class="col col--5">
+              <p><strong>Our Favourite Spots</strong></p>
+              <ul>
+                {% for poi in section.pois %}
+                  <li>{{poi.content}}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row row--6-6">
+          {% for local in section.locals %}
+            <div class="col">
+              <div class="bg--light" style="height: 100px; width: 100%;">Local reference</div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <!-- smaller layout for other cities -->
+    <div id="{{section.id}}" class="vpad--xxl">
+      <div class="container">
+        <div class="row row--6-6 row--reverse row--valign-center">
+          <div class="col">
+            <h2 class="title title--xl">{{section.title}}</h2>
+            <p class="text--xl">{{section.description}}</p>
+            <div class="space--sm"></div>
+            <p><strong>Our Favourite Spots</strong></p>
+            <ul>
+              {% for poi in section.pois %}
+                <li>{{poi.content}}</li>
+              {% endfor %}
+            </ul>
+            <div class="space--sm"></div>
+            {% for local in section.locals %}
+              <div class="bg--light" style="height: 100px; width: 100%;">Local reference</div>
+            {% endfor %}
+          </div>
+          <div class="col">
+            <div class="space--sm"></div>
+            <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');"></div>
+            <div class="space--sm"></div>
+            <div class="row row--6-6 row--gutters-sm">
+              <div class="col">
+                <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+              </div>
+              <div class="col">
+                <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+{% endfor %}

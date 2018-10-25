@@ -5,6 +5,11 @@
   &--light { background-color: $grey-lightest; }
   &--dark  { background-color: $grey-dark; }
   &--img   { @include background-attributes; }
+  &--fade {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1920px auto;
+  }
   &__fixed {
     position: fixed;
     top: 0;
