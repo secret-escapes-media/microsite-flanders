@@ -4,6 +4,7 @@ $footer-nav-color: $grey-darker;
 
 .site-nav {
   &--footer {
+    border-bottom: none;
     background-color: $footer-nav-color;
     &:before { background-image: url("../img/icons/nav-arrow-footer.svg"); }
   }

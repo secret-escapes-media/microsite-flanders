@@ -13,9 +13,13 @@
   cursor: pointer;
   @include transition;
   &--sm { padding: $s1 $s4; font-size: $s-2; }
+  &--xs { padding: $s-1 $s1; font-size: $s-2; }
   &--lg { padding: $s3 $s8; font-size: $s-1; }
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
+  }
+  &--red { background-color: $f-red;
+    &:hover { background-color: darken($f-red,10); }
   }
   &--outline {
     color: inherit;
@@ -39,6 +43,14 @@
       color: $white;
       background-color: $orange;
       &:before { border-color: $orange; }
+    }
+  }
+  &--outline-red {
+    &:before { border-color: $f-red; }
+    &:hover {
+      color: $white;
+      background-color: $f-red;
+      &:before { border-color: $f-red; }
     }
   }
 }

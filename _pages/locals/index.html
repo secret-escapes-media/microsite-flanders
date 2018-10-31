@@ -9,8 +9,9 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sit, r
 
 interviews:
 
-  - id: one
-    name: Firstname Lastname
+  - id: bruges-expert-first
+    name: Bruges Expert-first
+    city: bruges
     short-introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, deserunt.
     introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, mollitia. Consequuntur fugit laborum incidunt, rerum reprehenderit cumque debitis, id beatae asperiores recusandae omnis temporibus ab, quibusdam possimus. Eveniet, eos. Vel sed et eos, officia necessitatibus corporis ratione quis facilis ducimus!
     summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sit facere voluptates cupiditate quae soluta veniam consectetur quaerat delectus temporibus iusto, qui aliquam, omnis nihil culpa sed esse impedit, reprehenderit odit. Voluptas culpa corrupti porro cum earum impedit ea fugit beatae consectetur reiciendis ipsam hic cumque, a voluptate soluta, nemo consequuntur laborum modi. Maxime, cumque hic esse fugiat, nemo blanditiis.
@@ -20,8 +21,9 @@ interviews:
       - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ad quam dolor.
       - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum inventore nemo asperiores doloremque itaque, quam aut ullam ab quidem maiores nostrum! Nulla enim dolorem laboriosam excepturi veniam rem, accusantium expedita itaque praesentium fugit esse accusamus perspiciatis sunt iure quod a.
 
-  - id: two
-    name: Firstname Lastname
+  - id: bruges-expert-second
+    name: Bruges Expert-second
+    city: bruges
     short-introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, deserunt.
     introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, mollitia. Consequuntur fugit laborum incidunt, rerum reprehenderit cumque debitis, id beatae asperiores recusandae omnis temporibus ab, quibusdam possimus. Eveniet, eos. Vel sed et eos, officia necessitatibus corporis ratione quis facilis ducimus!
     summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sit facere voluptates cupiditate quae soluta veniam consectetur quaerat delectus temporibus iusto, qui aliquam, omnis nihil culpa sed esse impedit, reprehenderit odit. Voluptas culpa corrupti porro cum earum impedit ea fugit beatae consectetur reiciendis ipsam hic cumque, a voluptate soluta, nemo consequuntur laborum modi. Maxime, cumque hic esse fugiat, nemo blanditiis.
@@ -31,8 +33,9 @@ interviews:
       - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ad quam dolor.
       - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum inventore nemo asperiores doloremque itaque, quam aut ullam ab quidem maiores nostrum! Nulla enim dolorem laboriosam excepturi veniam rem, accusantium expedita itaque praesentium fugit esse accusamus perspiciatis sunt iure quod a.
 
-  - id: three
-    name: Firstname Lastname
+  - id: ghent-expertname
+    name: Ghent Expertname
+    city: ghent
     short-introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, deserunt.
     introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, mollitia. Consequuntur fugit laborum incidunt, rerum reprehenderit cumque debitis, id beatae asperiores recusandae omnis temporibus ab, quibusdam possimus. Eveniet, eos. Vel sed et eos, officia necessitatibus corporis ratione quis facilis ducimus!
     summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sit facere voluptates cupiditate quae soluta veniam consectetur quaerat delectus temporibus iusto, qui aliquam, omnis nihil culpa sed esse impedit, reprehenderit odit. Voluptas culpa corrupti porro cum earum impedit ea fugit beatae consectetur reiciendis ipsam hic cumque, a voluptate soluta, nemo consequuntur laborum modi. Maxime, cumque hic esse fugiat, nemo blanditiis.
@@ -42,8 +45,9 @@ interviews:
       - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ad quam dolor.
       - content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum inventore nemo asperiores doloremque itaque, quam aut ullam ab quidem maiores nostrum! Nulla enim dolorem laboriosam excepturi veniam rem, accusantium expedita itaque praesentium fugit esse accusamus perspiciatis sunt iure quod a.
 
-  - id: four
-    name: Firstname Lastname
+  - id: mechelen-expertname
+    name: Mechelen Expertname
+    city: mechelen
     short-introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, deserunt.
     introduction: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, mollitia. Consequuntur fugit laborum incidunt, rerum reprehenderit cumque debitis, id beatae asperiores recusandae omnis temporibus ab, quibusdam possimus. Eveniet, eos. Vel sed et eos, officia necessitatibus corporis ratione quis facilis ducimus!
     summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sit facere voluptates cupiditate quae soluta veniam consectetur quaerat delectus temporibus iusto, qui aliquam, omnis nihil culpa sed esse impedit, reprehenderit odit. Voluptas culpa corrupti porro cum earum impedit ea fugit beatae consectetur reiciendis ipsam hic cumque, a voluptate soluta, nemo consequuntur laborum modi. Maxime, cumque hic esse fugiat, nemo blanditiis.
@@ -56,7 +60,7 @@ interviews:
 
 <div class="vpad--xl bg--light">
   <div class="container">
-    <div class="width width--lg text--center text--xl">
+    <div class="width width--lg text--center text--xxl">
       <p>{{page.intro}}</p>
     </div>
   </div>
@@ -68,7 +72,7 @@ interviews:
       {% for interview in page.interviews %}
         <div class="col text--center">
           <div class="width width--interview">
-            <div class="bg-img bg-img--circle" style="background-image: url('{{site.img}}/img.jpg');">
+            <div class="bg-img bg-img--circle" style="background-image: url('{{site.img}}/content/locals/{{interview.id}}.jpg');">
               <a class="bg-img__link js-open-modal" data-open-modal="{{interview.id}}"></a>
             </div>
           </div>
@@ -76,7 +80,7 @@ interviews:
             <h2 class="title title--sm">{{interview.name}}</h2>
             <div class="text--lg">{{interview.short-introduction}}</div>
             <div class="space--sm"></div>
-            <a class="js-open-modal btn btn--outline btn--outline-orange" data-open-modal="{{interview.id}}">Read Interview</a>
+            <a class="js-open-modal btn btn--outline btn--outline-red" data-open-modal="{{interview.id}}">Read Interview</a>
           </div>
         </div>
       {% endfor %}

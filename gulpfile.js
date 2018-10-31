@@ -68,6 +68,11 @@ gulp.task('watch-js', ['build-js'], function() {
   gulp.watch(['_assets/js/**/*.js'], ['build-js']);
 });
 
+// watch for fonts
+gulp.task('watch-fonts', ['build-fonts'], function() {
+  gulp.watch(['_assets/fonts/**/*.*'], ['build-fonts']);
+});
+
 // watch for images
 gulp.task('watch-images', ['build-images'], function() {
   gulp.watch(['_assets/img/**/*.*'], ['build-images'])
@@ -150,6 +155,11 @@ gulp.task('build-images', function(cb) {
   .pipe(gulp.dest('./_site/_assets/img/'))
 });
 
+gulp.task('build-fonts', function(cb) {
+  return gulp.src('./_assets/fonts/**/*.*')
+  .pipe(gulp.dest('./_site/_assets/fonts/'))
+});
+
 
 // -------------------------------------------------------------------  compress
 
@@ -207,7 +217,8 @@ gulp.task('default', gulpSequence(
     'watch-sass',
     'watch-main-js',
     'watch-js',
-    'watch-images'
+    'watch-images',
+    'watch-fonts'
   ])
 );
 
@@ -219,7 +230,8 @@ gulp.task('build', gulpSequence(
     'build-sass',
     'build-main-js',
     'build-js',
-    'build-images'
+    'build-images',
+    'build-fonts'
   ],
   [
     'clean-sourcemaps',

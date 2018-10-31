@@ -103,6 +103,8 @@
   @include gutter-sizes($s2, $s4, $lg);
   &--gutters {
     // small gutters
+    &-xs { @include gutter-sizes($s-2, $s0, $lg); }
+    // small gutters
     &-sm { @include gutter-sizes($s0, $s2, $lg); }
     // large gutters
     &-lg { @include gutter-sizes($s4, $s6, $lg); }
