@@ -1,4 +1,5 @@
-<div class="bg--light vpad--sm hpad--xs width--md">
+{% assign bgc = include.bgc %}
+<div class="{{bgc}} vpad--sm hpad--xs width--md">
   <div class="row row--valign-center row--gutters-xs">
     <div class="col col--3">
       <div class="bg-img bg-img--circle" style="background-image: url('{{site.img}}/content/locals/{{local.id}}.jpg');">
@@ -6,7 +7,7 @@
       </div>
     </div>
     <div class="col col--9">
-      <div class="title title--xxs">See {{local.name}}'s viewpoint on {{section.title}}</div>
+      <div class="title title--xxs">See {{local.name}}'s viewpoint on {% if section.title %}{{section.title}}{% else %}{{page.title}}{% endif %}</div>
       <div class="space--xs"></div>
       <a class="js-open-modal btn btn--outline btn--outline-red btn--xs" data-open-modal="{{local.id}}">Read Interview</a>
     </div>

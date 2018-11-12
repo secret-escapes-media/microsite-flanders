@@ -1,0 +1,108 @@
+---
+layout: default
+id: bruges
+title: Bruges
+nav: true
+nav-order: 3
+content-pages: true
+intro: Bruges is a beguiling medieval delight, a chocolate-box town filled with romantic scenes at every turn. It’s one of Europe’s best-preserved, old-world centres, a step-back-in-time, with an indulgent lifestyle to tap into and hidden depths that dive into a world of art and craftsmanship. Under the shadow of the (leaning!) Belfry, discover a maze of medieval streets, marvel at magnificent architecture, take a boat trip along the canal, and unpick a foodie paradise. Expect fine dining and Renaissance marvels, woven into the enviable lifestyle that this UNESCO treasure fosters.
+
+pois:
+
+  - id: award-winning-gastronomy
+    title: Award-winning Gastronomy
+    description: Bruges boasts 39 chefs recommended by Michelin, Gault Millau and Bib Gourmand. No surprise then, that Bruges is also home to two renowned culinary colleges. Enjoy creative flair and Michelin-star dining in coveted eateries like De Jonkman, Zet’ Joe, and Sans Cravat.
+
+  - id: groeningemuseum
+    title: Groeningemuseum
+    description: A remarkably rich collection graces the walls of the Groeningemuseum, one of the finest art museums in Belgium. Come here to see the impressive host of Flemish Primitive works, plus other Renaissance masterpieces that depict the artistic and cultural flourish of the region’s Golden Age.
+
+  - id: antiques-and-artisanship
+    title: Antiques and Artisanship
+    description: Discover a wealth of antiques and handmade crafts in a city built on centuries of fine craftsmanship. For old-world curiosites, head to charming Dag en Zonne, or pick up antique Flemish paintings at Jean Moust. Discover the artisans of Bruges with the ‘Handmade in Bruges’ guide, found in the Information Office or in the app.
+
+  - id: basilica-of-the-holy-blood
+    title: Basilica of the Holy Blood
+    description: Marvel at the almost-hidden Basilica of the Holy Blood, where beautifully painted interiors mark the approach to a remarkable relic. Here, a Byzantine phial contains a blood-soaked cloth said to be that of Jesus Christ, victoriously brought to Bruges after the second crusade in the 12th century. Another clue to the story of Bruges’ successes.
+
+  - id: concertgebouw
+    title: Concertgebouw
+    description: This strikingly modern concert hall, which takes design cues from the red brick and iconic towers of the old town, is a cultural hub for the region. Expect contemporary dance and classical music year-round, with a renowned roster of interdisciplinary performance to quench your culture cravings.
+
+  - id: raise-a-historic-glass
+    title: Raise a Historic Glass
+    description: In such an old city, some institutions remain little-changed over the years; in fact, Café Vlissinghe (opened in 1515!) would exchange beer for Peter Paul Rubens’ paintings – or so the legend goes. Hang out in candle-lit medieval cellars at icons like Le Trappiste and ‘t Poatersgat, taste the classic Brugse Zot at the last family brewhouse in the old town. Proost!
+---
+
+<!-- variables set for locals data -->
+{% assign locals-page = site.html_pages | where: 'id', 'locals' | first %}
+{% assign local-data = locals-page.interviews %}
+
+<div class="vpad--xl bg--light">
+  <div class="container">
+    <div class="width width--xl text--center text--xl">
+      <p>{{page.intro}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="vpad--xxl">
+  <div class="container container--xxl">
+    <div class="video js-youtube-thumbnail js-autoplay" id="video-overview" data-thumbnail-img="{{site.img}}/content/{{page.id}}/video.jpg">
+      <iframe class="video__iframe" src='https://www.youtube.com/embed/Qfq7aurDxKA?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="vpad--xxl bg--light">
+  <div class="container">
+
+    <div class="row row--4-4-4">
+      {% for poi in page.pois %}
+        <div class="col">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{poi.id}}.jpg');"></div>
+          <div class="space--md"></div>
+          <h3 class="title title--sm">{{poi.title}}</h3>
+          <p>{{poi.description}}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="space--xxl"></div>
+
+    <div class="width width--xxl">
+      <div class="row row--6-6">
+        {% for local in local-data %}
+        {% if local.city == "bruges" %}
+        <div class="col">
+          {% include local-link.html bgc="bg--white" %}
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="map-intro" style="background-image: url('{{site.img}}/map/bg-map.jpg');">
+  <div class="container">
+    <div class="row row--valign-center row--no-gutters">
+      <div class="col col--xl-5">
+        <div class="vpad--desktop-xl">
+          <h4 class="title title--lg">Explore Flanders in our map</h4>
+          <p class="text--xxl">Discover our top-pick cities across the country.</p>
+        </div>
+      </div>
+      <div class="col col--xl-7">
+        <div class="width width--lg">
+          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/map/bg-map-overlay.png');">
+            <div class="bg-img__content">
+              <a class="js-open-map btn btn--red">Explore the map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

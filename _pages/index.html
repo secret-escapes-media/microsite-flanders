@@ -14,31 +14,27 @@ banner:
   <div class="container">
     <div class="width width--lg text--center">
       <p class="text--xxl">{{site.description}}</p>
-      <p>Remarkable medieval towns offer breathtaking scenes at every labyrinthine corner, hiding renowned galleries, charming Belgian cafes and impressive museums. Antwerp and Brussels strike a harmonious balance of cutting-edge modernity and timeless heritage, where further afield quiet medieval towns wait to be explored.</p>
-      <p>From the untouched splendour of Bruges to the bustling cosmopolitan flair of Ghent, Flanders retains old-world allure whilst simultaneously inspiring a vibrant, youthful edge that plays itself out in forward-thinking dining, trendy bars, plenty of great music and an electric atmosphere. Away from the cities and towns lies the flat, quaint Flemish countryside, dotted with rustic villages. It is here where bitter memories of the Western Front permeate the soil, discoverable in museums and exhibits across the land. Yet for all its dark past, Flanders is a truly vibrant, buzzing and fascinating region.</p>
+      <p>Remarkable medieval towns cast romantic scenes, hiding renowned galleries, charming Belgian bistros and impressive museums. From the timeless beauty of Bruges to the bustling cosmopolitan flair of Antwerp, Flanders retains old-world allure whilst simultaneously inspiring a vibrant, youthful edge that plays itself out in forward-thinking dining, trendy bars, plenty of great music and an electric atmosphere.</p>
+      <p>Away from the cities and towns lies the picturesque Flemish countryside, dotted with rustic villages. It is here where sacrifice along the Western Front is remembered, with sombre tributes discoverable in museums and exhibits across the region, offering opportunity for reflection. Away from the evocative fields of war, Flanders remains a truly vibrant and fascinating region loaded with cultural treasures.</p>
     </div>
   </div>
 </div>
 
-<div class="vpad--xl">
+<div class="vpad--xxl">
   <div class="container">
-    {% assign theme-page = site.html_pages | where: "id", "highlights" | first %}
-    {% for theme in theme-page.sections %}
-      <div class="bob{% cycle '', ' bob--swap' %}">
-        <div class="bob__img">
-          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{theme.id}}.jpg');">
-            <a class="bg-img__link" href="{{site.baseurl}}/highlights/#{{theme.id}}"></a>
+    <div class="row row--6-6 row--gutters-xl">
+      {% assign content-pages = site.html_pages | where: 'content-pages', 'true' | sort: 'nav-order' %}
+      {% for page in content-pages %}
+        <div class="col">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg');">
+            <a href="{{site.baseurl}}{{page.url}}" class="bg-img__link"></a>
+            <div class="bg-img__content">
+              <div class="title title--xl">{{page.title}}</div>
+            </div>
           </div>
         </div>
-        <div class="bob__text">
-          <h3 class="title title--xxl">{{theme.title}}</h3>
-          <p class="text--lg">{{theme.description | truncatewords: 22}}</p>
-          <div class="space--sm"></div>
-          <a href="{{site.baseurl}}/highlights/#{{theme.id}}" class="btn btn--red">Find Out More</a>
-        </div>
-      </div>
-      {% unless forloop.last %}<div class="space--xxxl"></div>{% endunless %}
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>
 

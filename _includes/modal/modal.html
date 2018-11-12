@@ -24,7 +24,7 @@
       {% endif %}
     {% endfor %}
 
-    {% if page.id == "locals" or page.id == "cities" %}
+    {% if page.id == "locals" or page.id == "cities" or page.id == "bruges" %}
       {% assign locals-page = site.html_pages | where: 'id', 'locals' | first %}
       {% assign local-data = locals-page.interviews %}
       {% for interview in local-data %}
