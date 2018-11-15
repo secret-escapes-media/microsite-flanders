@@ -77,6 +77,10 @@
   font-size: $s11;
   letter-spacing: 1.25rem;
   line-height: 1;
+  &--sm {
+    font-size: $s7;
+    letter-spacing: .5rem;
+  }
 }
 
 .banner-title-sub {
