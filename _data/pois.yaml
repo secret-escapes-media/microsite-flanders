@@ -1,0 +1,48 @@
+- id: zetjoe
+  title: Zet’ Joe
+  description: Refined Michelin-star dining awaits
+  link: http://www.zetjoe.be/en/
+
+- id: restaurant-sans-cravate
+  title: Restaurant Sans Cravate
+  description: Relaxed and contemporary Michelin dining
+  link: https://www.sanscravate.be/en/
+
+- id: groeningemuseum
+  title: Groeningemuseum
+  description: The Groeninge Museum is one of Belgium’s finest art museums...
+  link: https://www.visitbruges.be/en/groeningemuseum-groeninge-museum
+
+- id: dag-en-zonne
+  title: Dag en Zonne
+  description: Wonderfully picturesque antique shop packed with curios...
+  link: https://www.visitbruges.be/en/dagenzonne
+
+- id: jean-moust
+  title: Jean moust
+  description: Gallery shop selling Flemish paintings from the Golden Age and beyond
+  link: http://www.jeanmoust.com/
+
+- id: basilica-of-the-holy-blood
+  title: Basilica of the Holy Blood
+  description: A mesmerising site that harbours a rare relic...
+  link: http://www.holyblood.com/?lang=en
+
+- id: concertgebouw
+  title: Concertgebouw
+  description: A contemporary temple of all things music...
+  link: https://www.concertgebouw.nl/en/
+
+- id: cafe-vlissinghe
+  title: Café Vlissinghe
+  description: Since 1515 this spot has served as a favourite watering hole
+  link: http://www.cafevlissinghe.be/cafevlissinghe.be/home_EN.html
+
+- id: le-trappiste
+  title: Le Trappiste
+  description: This medieval cellar bar stocks a wide range of Belgian beers
+  link: http://www.letrappistebrugge.com/
+
+- id: t-poatersgat
+  title: ‘t Poatersgat
+  description: Head for the old cellar for a tempting array of Belgian beers

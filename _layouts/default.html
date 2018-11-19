@@ -21,6 +21,10 @@
 
     {% include page/footer.html %}
 
+    {% if page.map %}
+      {% include modal/map.html %}
+    {% endif %}
+
     {% include modal/modal.html %}
 
   </body>

@@ -5,6 +5,8 @@ title: Bruges
 nav: true
 nav-order: 3
 content-pages: true
+map: true
+
 intro: Bruges is a beguiling medieval delight, a chocolate-box town filled with romantic scenes at every turn. It’s one of Europe’s best-preserved, old-world centres, a step-back-in-time, with an indulgent lifestyle to tap into and hidden depths that dive into a world of art and craftsmanship. Under the shadow of the (leaning!) Belfry, discover a maze of medieval streets, marvel at magnificent architecture, take a boat trip along the canal, and unpick a foodie paradise. Expect fine dining and Renaissance marvels, woven into the enviable lifestyle that this UNESCO treasure fosters.
 
 pois:
@@ -85,24 +87,4 @@ pois:
   </div>
 </div>
 
-<div class="map-intro" style="background-image: url('{{site.img}}/map/bg-map.jpg');">
-  <div class="container">
-    <div class="row row--valign-center row--no-gutters">
-      <div class="col col--xl-5">
-        <div class="vpad--desktop-xl">
-          <h4 class="title title--lg">Explore Flanders in our map</h4>
-          <p class="text--xxl">Discover our top-pick cities across the country.</p>
-        </div>
-      </div>
-      <div class="col col--xl-7">
-        <div class="width width--lg">
-          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/map/bg-map-overlay.png');">
-            <div class="bg-img__content">
-              <a class="js-open-map btn btn--red">Explore the map</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% include page/promo-map.html %}

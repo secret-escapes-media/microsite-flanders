@@ -1,0 +1,57 @@
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  $icon-size: 3em;
+
+  &__wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-map;
+    height: 100%;
+    width: 100%;
+    background-color: #f8f4f0; // seems to be the bg colour of when the mapbox layers are loading in
+    $fade-transition-time: .66s;
+    &.is-open {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s linear 0s, opacity $fade-transition-time;
+      .mapboxgl-ctrl-attrib.mapboxgl-compact::after { display: block; }
+    }
+    &.is-closed {
+      opacity: 0;
+      visibility: hidden;
+      transition: visibility 0s linear $fade-transition-time, opacity $fade-transition-time;
+      .mapboxgl-ctrl-attrib.mapboxgl-compact::after { display: none; }
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: $icon-size;
+    width: $icon-size;
+    background-color: rgba($black,.5);
+    background-image: url('../img/icons/close.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: ($icon-size/3);
+    cursor: pointer;
+    z-index: $z-overlay-upper;
+    transition: background-color $transition-time ease;
+    &:hover{ background-color: $black; }
+  }
+}
+
+.map-disable-scroll { overflow: hidden; }
+
+// mapbox resets
+.mapboxgl-ctrl,
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib.mapboxgl-compact {
+  margin: 0 !important;
+}

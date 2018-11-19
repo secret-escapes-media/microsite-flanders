@@ -44,4 +44,8 @@
   {% if page.extra-css %}<link rel="stylesheet" href="{{site.css}}/{{page.id}}.css">{% endif %}
   <script src="{{site.js}}/main.js"></script>
   {% if page.extra-js %}<script src="{{site.js}}/{{page.id}}.js"></script>{% endif %}
+  {% if page.map %}
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+  {% endif %}
 </head>

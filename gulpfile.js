@@ -119,6 +119,11 @@ gulp.task('build-main-js', function(cb) {
     // custom js - with on doc ready wrapper
     './_assets/js/_components/on-ready/start.js',
 
+    // map marker data
+    './_assets/js/_components/marker-data/pois.js',
+    './_assets/js/_components/marker-data/cities.js',
+    './_assets/js/_components/marker-data/bruges.js',
+
     // components
     './_assets/js/_components/standard.js',
     './_assets/js/_components/offer-countdown.js',
@@ -126,6 +131,7 @@ gulp.task('build-main-js', function(cb) {
     './_assets/js/_components/modal-nav.js',
     './_assets/js/_components/page-nav.js',
     './_assets/js/_components/video.js',
+    './_assets/js/_components/map.js',
     // './_assets/js/_components/sticky-nav.js',
 
     // custom js for project

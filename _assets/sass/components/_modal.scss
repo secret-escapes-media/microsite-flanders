@@ -1,5 +1,6 @@
 .modal {
   $icon-size: 3em;
+  width: 100%;
   position: relative;
   margin-top: ($icon-size*1.5);
   margin-bottom: ($icon-size*1.5);
@@ -91,9 +92,10 @@
       &:hover     { background-color: $black; }
     }
   }
-  &--standard { max-width: $xl; }
-  &--series   { max-width: $xl; }
-  &--image    { max-width: $xxl; }
+  &--poi       { max-width: $lg; }
+  &--standard  { max-width: $xl; }
+  &--series    { max-width: $xl; }
+  &--image     { max-width: $xxl; }
   &--interview { max-width: $xxl; }
   &--youtube  {
     width: 100%;
@@ -126,7 +128,7 @@
   }
   @include bp($lg){
     &__content {
-      padding: $s4 $s6;
+      padding: $s4;
     }
   };
 }

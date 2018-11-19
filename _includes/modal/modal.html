@@ -65,5 +65,45 @@
       {% endfor %}
     {% endif %}
 
+
+    {% if page.map %}
+
+      <!-- city modals -->
+      {% assign cities-page = site.html_pages | where: 'id', 'cities' | first %}
+      {% assign city-data = cities-page.sections %}
+      {% for city in city-data %}
+        <div class="modal modal--standard is-closed" data-modal-id="{{city.id}}">
+          <div class="js-close-modal modal__close"></div>
+          <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/cities/{{city.id}}/01.jpg');"></div>
+          <div class="modal__content">
+            <span class="title title--xl">{{city.title}}</span>
+            <div class="space--xs"></div>
+            <p>{{city.description | truncatewords: 25}}</p>
+            <div class="space--sm"></div>
+            <a href="{{site.baseurl}}/cities#{{city.id}}" class="btn btn--sm btn--red">Find Out More</a>
+          </div>
+        </div>
+      {% endfor %}
+
+      <!-- poi modals -->
+      {% for poi in site.data.pois %}
+        <div class="modal modal--poi is-closed" data-modal-id="{{poi.id}}">
+          <div class="js-close-modal modal__close"></div>
+          <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/map/pois/{{poi.id}}.jpg');"></div>
+          <div class="modal__content">
+            <span class="title title--md">{{poi.title}}</span>
+            <div class="space--xs"></div>
+            <p>{{poi.description}}</p>
+            {% if poi.link %}
+              <div class="space--sm"></div>
+              <a href="{{poi.link}}" class="btn btn--sm btn--outline btn--outline-red">Find Out More</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+
+    {% endif %}
+
+
   </div>
 </div>
