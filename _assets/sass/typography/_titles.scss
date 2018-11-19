@@ -5,6 +5,7 @@
   font-family: $font-title-01;
   font-weight: 600;
   line-height: 1;
+  &--xxxxl  { font-size: $s9; }
   &--xxxl   { font-size: $s8; }
   &--xxl    { font-size: $s7; }
   &--xl     { font-size: $s6; }
@@ -15,6 +16,7 @@
   &--xxs    { font-size: $s1; }
   &--xxxs   { font-size: $s0; }
   @include bp($lg){
+    &--xxxxl  { font-size: $s10; }
     &--xxxl   { font-size: $s9; }
     &--xxl    { font-size: $s8; }
     &--xl     { font-size: $s7; }
@@ -30,12 +32,18 @@
 .sub-title {
   // custom content headline
   font-family: $font-title-02;
+  text-transform: lowercase;
+  font-weight: 400;
+  letter-spacing: .25rem;
+  line-height: 1.15;
+
+
   font-size: $s2; // default size
-  &--lg     { font-size: $s4; }
+  &--lg     { font-size: $s3; }
   &--sm     { font-size: $s0; }
   @include bp($lg){
     font-size: $s3; // default size
-    &--lg     { font-size: $s5; }
+    &--lg     { font-size: $s4; }
     &--sm     { font-size: $s1; }
   }
 }

@@ -8,3 +8,6 @@
 
 <!-- offers by price -->
 {% assign offers-by-price = offers | sort: 'price' %}
+
+<!-- bruges offers by price -->
+{% assign bruges-offers = offers | where: 'bruges', 'true' | sort: 'price' %}

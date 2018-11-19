@@ -15,16 +15,23 @@
 
         <div class="container">
 
-          <div class="width width--xl text--center content-spacing">
+          <div class="width width--xxl text--center content-spacing text--white">
             <div class="space--xxxxl"></div>
             <div class="space--xl"></div>
-            <h1 class="title title--xxxl text--white">{{page.title}}</h1>
+            <h2 class="title title--xxxxl">Indulge in truly delicious moments…</h2>
+            <div class="space--sm"></div>
+            <h3 class="sub-title sub-title--lg width width--lg ">Book a Bruges escape and you could win a treat or two!</h3>
+            <div class="space--md"></div>
+            <a href="#bruges-offers" class="btn btn--lg btn--red">Book now</a>
             <div class="space--xxxxl"></div>
           </div>
 
-          <div class="width width--xxl bg--white boxpad--xl">
-          <p class="width width--lg text--lg">{{page.intro}}</p>
-            <div class="vpad--sm">
+          <div class="width width--xxl bg--white boxpad--xl content-spacing">
+            <div class="width width--lg text--center text--xl">
+              <p>{{page.intro}}</p>
+              <p><strong>To Enter book a break to Bruges and you'll be automatically entered</strong></p>
+            </div>
+            <div class="space--lg">
               <div class="row row--4-4-4 row--gutters-sm">
                 <div class="col">
                   <div class="bg-img bg-img--3-2 bg-img--lg-1-1" style="background-image: url('{{site.img}}/img.jpg');"></div>
@@ -37,11 +44,17 @@
                 </div>
               </div>
             </div>
-            <p class="width width--lg text--lg">{{page.intro}}</p>
-            <div class="space--md width width--lg text--center">
-              <p class="text--xxl"><strong>To Enter book a break to Bruges and you'll be automatically entered</strong></p>
-              <div class="space--sm"></div>
-              <a href="https://www.secretescapes.com/search/search?query=Bruges%2C+Belgium" class="btn btn--lg btn--red">See Bruges Offers</a>
+          </div>
+
+          {% include offer/variables.html %}
+
+          <div id="bruges-offers" class="container vpad--xxl">
+            <div class="row row--xl-6-6 row--gutters-lg">
+              {% for offer in bruges-offers %}
+                <div class="col">
+                  {% include offer/offer.html %}
+                </div>
+              {% endfor %}
             </div>
           </div>
 
