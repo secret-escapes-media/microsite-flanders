@@ -18,6 +18,6 @@
     bottom: 0;
     z-index: $z-background;
     @include background-attributes;
-    background-color: $grey-darker;
+    background-color: $grey-lightest;
   }
 }

@@ -36,7 +36,7 @@
   font-weight: 400;
   letter-spacing: .25rem;
   line-height: 1.15;
-
+  &--case     { text-transform: none;}
 
   font-size: $s2; // default size
   &--lg     { font-size: $s3; }
