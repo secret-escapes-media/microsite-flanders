@@ -82,12 +82,29 @@
   font-family: $font-title-01;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: $s11;
-  letter-spacing: 1.25rem;
   line-height: 1;
+  font-size: $s5;
+  letter-spacing: .75rem;
+  @include bp($sm)  { font-size: $s6; }
+  @include bp($md)  { font-size: $s7; }
+  @include bp($lg)  { font-size: $s8; }
+  @include bp($xl)  {
+    font-size: $s9;
+    letter-spacing: 1.25rem;
+  }
+  @include bp($xxl) { font-size: $s11; }
+  &--overview {
+    @include bp($sm)  { font-size: $s6; }
+    @include bp($md)  { font-size: $s8; }
+    @include bp($lg)  { font-size: $s10; }
+    @include bp($xl) { font-size: $s11; }
+  }
   &--sm {
-    font-size: $s7;
+    font-size: $s3;
     letter-spacing: .5rem;
+    @include bp($sm) { font-size: $s4; }
+    @include bp($md) { font-size: $s5; }
+    @include bp($lg) { font-size: $s7; }
   }
 }
 
@@ -96,7 +113,10 @@
   font-family: $font-title-02;
   text-transform: lowercase;
   font-weight: 400;
-  font-size: $s5;
   letter-spacing: .75rem;
   line-height: 1.15;
+  font-size: $s2;
+  @include bp($sm){ font-size: $s3; }
+  @include bp($lg){ font-size: $s4; }
+  @include bp($xl){ font-size: $s5; }
 }

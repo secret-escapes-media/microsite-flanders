@@ -13,12 +13,12 @@
       <div class="site-header__offset"></div>
       {% include nav/site.html %}
 
-        <div class="container">
+        <div class="container clip-long-titles">
 
           <div class="width width--xxl text--center content-spacing text--white">
             <div class="space--xxxxl"></div>
             <div class="space--xl"></div>
-            <h2 class="title title--xxxxl">Indulge in truly delicious moments…</h2>
+            <h2 class="title title--xxxl">Indulge in truly delicious moments…</h2>
             <div class="space--sm"></div>
             <h3 class="sub-title sub-title--case sub-title--lg width width--lg ">Book a Bruges escape and you could win a treat or two!</h3>
             <div class="space--md"></div>
@@ -33,13 +33,13 @@
             <div class="space--lg">
               <div class="row row--4-4-4 row--gutters-sm">
                 <div class="col">
-                  <div class="bg-img bg-img--3-2 bg-img--lg-1-1" style="background-image: url('{{site.img}}/content/{{page.id}}/01.jpg');"></div>
+                  <div class="bg-img bg-img--16-9 bg-img--lg-1-1" style="background-image: url('{{site.img}}/content/{{page.id}}/01.jpg');"></div>
                 </div>
                 <div class="col">
-                  <div class="bg-img bg-img--3-2 bg-img--lg-1-1" style="background-image: url('{{site.img}}/content/{{page.id}}/02.jpg');"></div>
+                  <div class="bg-img bg-img--16-9 bg-img--lg-1-1" style="background-image: url('{{site.img}}/content/{{page.id}}/02.jpg');"></div>
                 </div>
                 <div class="col">
-                  <div class="bg-img bg-img--3-2 bg-img--lg-1-1" style="background-image: url('{{site.img}}/content/{{page.id}}/03.jpg');"></div>
+                  <div class="bg-img bg-img--16-9 bg-img--lg-1-1" style="background-image: url('{{site.img}}/content/{{page.id}}/03.jpg');"></div>
                 </div>
               </div>
             </div>
@@ -47,7 +47,7 @@
 
           {% include offer/variables.html %}
 
-          <div id="bruges-offers" class="container vpad--xxl">
+          <div id="bruges-offers" class="vpad--xxl">
             <div class="row row--xl-6-6 row--gutters-lg">
               {% for offer in bruges-offers %}
                 <div class="col">
@@ -57,7 +57,7 @@
             </div>
           </div>
 
-          <div class="space--xxxxl"></div>
+          <div class="space--xxl"></div>
 
         </div>
 

@@ -34,7 +34,7 @@
     right: 0;
     bottom: 0;
     z-index: $z-content;
-    background-color: $grey-dark;
+    background-color: darken($f-red,30);
     @include background-attributes;
     // &:before {
     //   // optional colour overlay on bg image

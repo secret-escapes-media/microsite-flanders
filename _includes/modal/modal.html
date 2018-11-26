@@ -37,7 +37,7 @@
           <div class="modal__content">
             <div class="vpad--xs">
               <div class="row row--gutters-lg">
-                <div class="col col--4">
+                <div class="col col--xxl-4">
                   <div class="width width--sm">
                     <div class="bg-img bg-img--circle" style="background-image: url('{{site.img}}/content/locals/{{interview.id}}.jpg');"></div>
                   </div>
@@ -48,7 +48,7 @@
                     <div>{{interview.introduction}}</div>
                   </div>
                 </div>
-                <div class="col col--8">
+                <div class="col col--xxl-8">
                   <div class="content-spacing">
                     <p class="text--xxl">{{interview.summary}}</p>
                     <ul>
@@ -96,7 +96,7 @@
             <p>{{poi.description}}</p>
             {% if poi.link %}
               <div class="space--sm"></div>
-              <a href="{{poi.link}}" class="btn btn--sm btn--outline btn--outline-red">Find Out More</a>
+              <a id="track-map-modal-btn-{{poi.id}}" href="{{poi.link}}" class="btn btn--sm btn--outline btn--outline-red">Find Out More</a>
             {% endif %}
           </div>
         </div>

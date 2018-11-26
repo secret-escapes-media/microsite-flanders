@@ -73,7 +73,10 @@ $(document).keyup(function(event) {
         var iconPadding;
         if ($(window).innerWidth() < 400) {
           iconPadding = { "padding": 50 };
-        } else {
+        } else if ($(window).innerWidth() >= 400 && $(window).innerWidth() <= 1000) {
+          iconPadding = { "padding": 100 };
+        }
+        else {
           iconPadding = { "padding": 200 };
         }
         map.fitBounds(bounds, iconPadding); // adds padding so markers aren't on edge
@@ -91,8 +94,11 @@ $(document).keyup(function(event) {
       var iconPadding;
       if ($(window).innerWidth() < 400) {
         iconPadding = { "padding": 50 };
-      } else {
-        iconPadding = { "padding": 300 };
+      } else if ($(window).innerWidth() >= 400 && $(window).innerWidth() <= 1000) {
+        iconPadding = { "padding": 100 };
+      }
+      else {
+        iconPadding = { "padding": 200 };
       }
       map.fitBounds(bounds, iconPadding); // adds padding so markers aren't on edge
 

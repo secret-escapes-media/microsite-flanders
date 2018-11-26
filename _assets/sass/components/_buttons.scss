@@ -37,14 +37,14 @@
       @include transition;
     }
   }
-  &--outline-orange {
-    &:before { border-color: $orange; }
-    &:hover {
-      color: $white;
-      background-color: $orange;
-      &:before { border-color: $orange; }
-    }
-  }
+  // &--outline-orange {
+  //   &:before { border-color: $orange; }
+  //   &:hover {
+  //     color: $white;
+  //     background-color: $orange;
+  //     &:before { border-color: $orange; }
+  //   }
+  // }
   &--outline-red {
     &:before { border-color: $f-red; }
     &:hover {

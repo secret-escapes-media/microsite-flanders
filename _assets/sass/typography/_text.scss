@@ -25,9 +25,19 @@
   &--left   { text-align: left; }
   &--right  { text-align: right; }
   &--center { text-align: center; }
+  @include bp($md) {
+    &--md-left   { text-align: left; }
+    &--md-right  { text-align: right; }
+    &--md-center { text-align: center; }
+  }
   @include bp($lg) {
     &--bp-left   { text-align: left; }
     &--bp-right  { text-align: right; }
     &--bp-center { text-align: center; }
+  }
+  @include bp($xl) {
+    &--xl-left   { text-align: left; }
+    &--xl-right  { text-align: right; }
+    &--xl-center { text-align: center; }
   }
 }

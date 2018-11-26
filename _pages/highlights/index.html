@@ -1,7 +1,7 @@
 ---
 layout: default
 id: highlights
-title: Highlights
+title: High&shy;lights
 nav: true
 nav-order: 2
 content-pages: true
@@ -87,7 +87,7 @@ sections:
         <p class="width width--lg text--xl">{{section.description}}</p>
       </div>
       <div class="space--xl"></div>
-      <div class="row row--6-6 row--gutters-sm">
+      <div class="row row--xl-6-6 row--gutters-sm">
         <div class="col">
           <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/01.jpg');"></div>
         </div>
@@ -96,10 +96,10 @@ sections:
         </div>
       </div>
       <div class="space--lg"></div>
-      <div class="row row--4-4-4">
+      <div class="row row--xl-4-4-4">
         {% for poi in section.pois %}
           <div class="col">
-            <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/{{poi.id}}.jpg');"></div>
+            <div class="bg-img bg-img--16-9 bg-img--xl-4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/{{poi.id}}.jpg');"></div>
             <div class="space--md"></div>
             <h3 class="title title--sm">{{poi.title}}</h3>
             <p>{{poi.description}}</p>

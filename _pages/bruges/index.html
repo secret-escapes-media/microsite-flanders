@@ -59,10 +59,10 @@ pois:
 <div class="vpad--xxl bg--light">
   <div class="container">
 
-    <div class="row row--4-4-4">
+    <div class="row row--xl-4-4-4">
       {% for poi in page.pois %}
         <div class="col">
-          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{poi.id}}.jpg');"></div>
+          <div class="bg-img bg-img--3-2 bg-img--xl-4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{poi.id}}.jpg');"></div>
           <div class="space--md"></div>
           <h3 class="title title--sm">{{poi.title}}</h3>
           <p>{{poi.description}}</p>
@@ -73,7 +73,7 @@ pois:
     <div class="space--xxl"></div>
 
     <div class="width width--xxl">
-      <div class="row row--6-6">
+      <div class="row row--xl-6-6">
         {% for local in local-data %}
         {% if local.city == "bruges" %}
         <div class="col">

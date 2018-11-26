@@ -1,12 +1,14 @@
 {% assign bgc = include.bgc %}
-<div class="{{bgc}} vpad--sm hpad--xs width--md">
+<div class="{{bgc}} vpad--sm hpad--xs width--md local">
   <div class="row row--valign-center row--gutters-xs">
-    <div class="col col--3">
-      <div class="bg-img bg-img--circle" style="background-image: url('{{site.img}}/content/locals/{{local.id}}.jpg');">
-        <a class="js-open-modal bg-img__link" data-open-modal="{{local.id}}"></a>
+    <div class="col col--md-3">
+      <div class="width width--xs">
+        <div class="bg-img bg-img--circle" style="background-image: url('{{site.img}}/content/locals/{{local.id}}.jpg');">
+          <a class="js-open-modal bg-img__link" data-open-modal="{{local.id}}"></a>
+        </div>
       </div>
     </div>
-    <div class="col col--9">
+    <div class="col col--md-9 text--center text--md-left">
       <div class="title title--xs">See {{local.name}}'s viewpoint on {% if section.title %}{{section.title}}{% else %}{{page.title}}{% endif %}</div>
       <div class="space--xs"></div>
       <a class="js-open-modal btn btn--outline btn--outline-red btn--xs" data-open-modal="{{local.id}}">Read Interview</a>

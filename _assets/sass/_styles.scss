@@ -2,7 +2,25 @@
 
 .map-intro {
   background-position: center top;
+  padding-top: $s4;
+  padding-bottom: $s4;
+  @include bp($xl){
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .bg-img {
     background-color: transparent;
   }
 }
+
+.local {
+  margin-left: auto;
+  margin-right: auto;
+  @include bp($xl){
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+
+.clip-long-titles { overflow-x: hidden;} // used on comp page to stop horizontal scroll on small screen, same behaviour as title on .banner

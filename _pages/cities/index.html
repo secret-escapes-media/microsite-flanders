@@ -108,7 +108,19 @@ sections:
     <!-- smaller layout for other cities -->
     <div id="{{section.id}}" class="vpad--xxl">
       <div class="container">
-        <div class="row row--6-6 row--reverse row--valign-center">
+        <div class="row row--xl-6-6 row--valign-center">
+          <div class="col">
+            <div class="bg-img bg-img--1-1 bg-img--md-4-3 bg-img--xl-2-3 bg-img--xxl-4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/01.jpg');"></div>
+            <div class="space--sm"></div>
+            <div class="row row--constant-6-6 row--gutters-sm">
+              <div class="col">
+                <div class="bg-img bg-img--1-1 bg-img--md-16-9 bg-img--xl-1-1 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/02.jpg');"></div>
+              </div>
+              <div class="col">
+                <div class="bg-img bg-img--1-1 bg-img--md-16-9 bg-img--xl-1-1 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/03.jpg');"></div>
+              </div>
+            </div>
+          </div>
           <div class="col">
             <h2 class="title title--xxl">{{section.title}}</h2>
             <p class="text--xl">{{section.description}}</p>
@@ -125,18 +137,6 @@ sections:
                 {% include local-link.html bgc="bg--light" %}
               {% endif %}
             {% endfor %}
-          </div>
-          <div class="col">
-            <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/01.jpg');"></div>
-            <div class="space--sm"></div>
-            <div class="row row--6-6 row--gutters-sm">
-              <div class="col">
-                <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/02.jpg');"></div>
-              </div>
-              <div class="col">
-                <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/03.jpg');"></div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
