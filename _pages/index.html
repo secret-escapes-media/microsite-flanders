@@ -27,7 +27,7 @@ banner:
       {% assign content-pages = site.html_pages | where: 'content-pages', 'true' | sort: 'nav-order' %}
       {% for page in content-pages %}
         <div class="col">
-          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg');">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/nav.jpg');">
             <a href="{{site.baseurl}}{{page.url}}" class="bg-img__link"></a>
             <div class="bg-img__bg-overlay"></div>
             <div class="bg-img__content">
