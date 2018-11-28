@@ -2,6 +2,13 @@
 
 .site-footer {
 
+  .inline-link {
+    color: $grey-lighter;
+    text-decoration: underline;
+    @include transition;
+    &:hover { color: $white; }
+  }
+
   &__wrap {
     @include page-padding;
     padding-top: $s8;

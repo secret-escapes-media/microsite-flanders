@@ -6,6 +6,18 @@
       {% include components/logo-partner.html placement="footer" small='true' %}
     </div>
     <div class="space--sm text--sm">
+      {% assign modals = site.data.modals %}
+      {% for modal in modals %}
+        {% if modal.pages %}
+          {% for modal-page in modal.pages %}
+            {% if modal-page.id == page.id or modal-page.id == 'all' or modal-page.layout == page.layout %}
+              <p><a href="#" class="js-open-modal inline-link" data-open-modal="comp-tandcs">Competition terms & conditions</a></p>
+              <div class="space--xs"></div>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+
       <p>© Copyright <span class="js-year">2018</span> Secret Escapes</p>
     </div>
   </div>
