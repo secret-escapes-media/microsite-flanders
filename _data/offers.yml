@@ -5,28 +5,16 @@
   price: 149
   price-description: per person for 2 nights
   saved: 31
-  expires: 2018/11/26
+  expires: 2018/12/03
   image: https://d1x3cbuht6sy0f.cloudfront.net/sales/54691/58d99943_3f7a_4eba_ac59_df4e1af4d32b.jpg
   link: https://www.secretescapes.com/charming-bruges-break-with-christmas-market-dates-grand-hotel-casselbergh-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=November2018
-  bruges: true
-
-- title: Enchanting Bruges break with Eurostar or Eurotunnel travel & Christmas market dates
-  id: enchanting-bruges-break-with-eurostar-or-eurotunnel-travel-and-christmas-market-dates
-  location: Hotel Rosenburg, Belgium
-  description: Charm and canalside bliss on a sweet Bruges break
-  price: 119
-  price-description: per person for 2 nights
-  saved: 31
-  expires: 2018/11/26
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/74269/d2ff378b_b05f_483c_bd54_bf9411e09467.jpg
-  link: https://www.secretescapes.com/bruges-break-with-eurostar-or-eurotunnel-travel-and-christmas-market-dates-hotel-rosenburg-belgium1/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=November2018
   bruges: true
 
 - title: Enchanting Bruges city break with Eurostar or Eurotunnel travel
   id: enchanting-bruges-city-break-with-eurostar-or-eurotunnel-travel
   location: Hotel de' Medici, Belgium
   description: A picturesque canalside break in the centre of Bruges
-  price: 145
+  price: 129
   price-description: per person for 2 nights
   saved: 31
   expires: 2018/12/03
@@ -38,7 +26,7 @@
   id: romantik-hotel-de-orangerie
   location: Bruges, Belgium
   description: A canalside boutique stay in fairytale Bruges
-  price: 120
+  price: 133
   price-description: per room per night
   saved: 32
   expires: 2018/12/03
