@@ -5,7 +5,7 @@
   price: 139
   price-description: per person for 2 nights
   saved: 31
-  expires: 2018/12/17
+  expires: 2019/01/02
   image: https://d1x3cbuht6sy0f.cloudfront.net/sales/52463/fb3e5451_a9da_462d_80a3_8e6eeb50a3b1.jpg
   link: https://www.secretescapes.com/enchanting-bruges-city-break-with-eurostar-or-eurotunnel-travel-hotel-de-medici-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=December2018
   bruges: true
@@ -14,22 +14,10 @@
   id: elegant-bruges-break-with-christmas-market-dates-and-eurostar-or-eurotunnel-travel
   location: Hotel Aragon, Belgium
   description: A picturesque Bruges break by the iconic Market Square
-  price: 179
+  price: 139
   price-description: per person for 2 nights
   saved: 31
-  expires: 2018/12/17
+  expires: 2019/01/02
   image: https://d1x3cbuht6sy0f.cloudfront.net/sales/49185/b6df3e4f_8c04_4972_a70a_d14ac64a3e2a.jpg
   link: https://www.secretescapes.com/elegant-bruges-break-with-christmas-market-dates-and-eurostar-or-eurotunnel-travel-hotel-aragon-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=December2018
-  bruges: true
-
-- title: Chic central Bruges break with Christmas market dates and decadent extras
-  id: chic-central-bruges-break-with-christmas-market-dates-and-decadent-extras
-  location: Hotel Montanus, Belgium
-  description: A sleek and central Bruges stay via Eurostar or Eurotunnel
-  price: 189
-  price-description: per person for 2 nights
-  saved: 31
-  expires: 2018/12/17
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/76079/845d5bd8_2228_45ff_8a05_5d162413d428.jpg
-  link: https://www.secretescapes.com/chic-central-bruges-break-with-christmas-market-dates-hotel-montanus-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=December2018
   bruges: true
