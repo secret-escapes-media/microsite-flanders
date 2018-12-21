@@ -21,3 +21,27 @@
   image: https://d1x3cbuht6sy0f.cloudfront.net/sales/49185/b6df3e4f_8c04_4972_a70a_d14ac64a3e2a.jpg
   link: https://www.secretescapes.com/elegant-bruges-break-with-christmas-market-dates-and-eurostar-or-eurotunnel-travel-hotel-aragon-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=December2018
   bruges: true
+
+- title: Classic Bruges sojourn with Eurostar or Eurotunnel travel
+  id: classic-bruges-sojourn-with-eurostar-or-eurotunnel-travel
+  location: Hotel The Peellaert, Belgium
+  description: Stay in the historic centre of Bruges at a romantic adults-only 19th-century hotel near Market Place, with breakfast and Eurostar or Eurotunnel travel
+  price: 179
+  price-description: per person for 2 nights
+  saved: #
+  expires: 2019/01/02
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/41607/6be10c55_f30b_4880_96bd_867845a025db.jpg
+  link: https://www.secretescapes.com/classic-bruges-sojourn-with-eurostar-or-eurotunnel-travel-hotel-the-peellaert-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=December2018
+  bruges: true
+
+- title: Hotel Dukes Palace Bruges
+  id: hotel-dukes-palace-bruges
+  location: Bruges, Belgium
+  description: A plush Bruges break at the city's only five-star hotel - a grand 15th-century former ducal residence, includes breakfast, spa access and welcome treats
+  price: 76
+  price-description: per person - based on 2 persons
+  saved: #
+  expires: 2018/12/24
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/17110/dcc5aee6_436a_4dc2_8996_b6c74d88cf0d.jpg
+  link: https://www.secretescapes.com/hotel-dukes-palace-bruges-bruges-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=December2018
+  bruges: true
