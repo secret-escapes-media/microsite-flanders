@@ -1,36 +1,33 @@
+- title: Charming Bruges break with Christmas market dates
+  id: charming-bruges-break-with-christmas-market-dates
+  location: Grand Hotel Casselbergh, Belgium
+  description: A fairytale getaway to an elegant Bruges hotel
+  price: 189
+  price-description: per person for 2 nights
+  saved: #
+  expires: 2019/01/14
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/54691/58d99943_3f7a_4eba_ac59_df4e1af4d32b.jpg
+  link: https://www.secretescapes.com/charming-bruges-break-with-christmas-market-dates-grand-hotel-casselbergh-belgium1/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  bruges: true
 
-- title: Boutique Bruges break with Eurostar or Eurotunnel travel
-  id: boutique-bruges-break-with-eurostar-or-eurotunnel-travel
-  location: Hotel Prinsenhof, Belgium
-  description: Award-winning break in the centre of historic Bruges
-  price: 169
+- title: Stylish Ostend getaway near to the beach with Eurostar travel or self-drive with Eurotunnel
+  id: stylish-ostend-getaway-near-to-the-beach-with-eurostar-travel-or-self-drive-with-eurotunnel
+  location: Hotel Mercure Oostende, Belgium
+  description: Stay in a stylish hotel on the Belgian coast
+  price: 139
   price-description: per person for 2 nights
   saved: 31
-  expires: 2019/01/07
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/50246/55357804_1b1e_49f5_8560_030f6da366d6.jpg
-  link: https://www.secretescapes.com/boutique-bruges-break-with-eurostar-or-eurotunnel-travel-hotel-prinsenhof-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
-  
+  expires: 2019/01/14
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/85270/c5a19dbc_7d71_4e47_9976_0e276e09b0a3.jpg
+  link: https://www.secretescapes.com/stylish-ostend-getaway-near-to-the-beach-with-eurostar-travel-or-self-drive-with-eurotunnel-hotel-mercure-oostende-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
 
-- title: Hotel Dukes Palace Bruges
-  id: hotel-dukes-palace-bruges
-  location: Bruges, Belgium
-  description: An opulent Bruges stay at Bruges' only five-star hotel
-  price: 152
+- title: Eburon Hotel
+  id: eburon-hotel
+  location: Tongeren, Belgium
+  description: A former monastery turned chic boutique in Tongeren
+  price: 62
   price-description: per room per night
-  saved: 36
-  expires: 2019/01/07
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/17110/dcc5aee6_436a_4dc2_8996_b6c74d88cf0d.jpg
-  link: https://www.secretescapes.com/hotel-dukes-palace-bruges-bruges-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
-  
-
-- title: Hotel Metropole
-  id: hotel-metropole
-  location: Brussels, Belgium
-  description: A palatial five-star Brussels stay at a 19th-century hotel
-  price: 104
-  price-description: per room per night
-  saved: 40
-  expires: 2019/01/07
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/26785/c6bf1f60_1845_4b86_9e36_789bed4ce027.jpg
-  link: https://www.secretescapes.com/hotel-metropole-brussels-belgium2/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
-  
+  saved: 53
+  expires: 2019/01/14
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/18181/3db0cc2c_1e6e_487b_9050_366358bb5ce0.jpg
+  link: https://www.secretescapes.com/eburon-hotel-tongeren-belgium-uk/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
