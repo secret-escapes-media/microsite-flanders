@@ -20,3 +20,25 @@
   image: https://d1x3cbuht6sy0f.cloudfront.net/sales/20469/44b99678_6c15_462b_a16c_f664d896c9d4.jpg
   link: https://www.secretescapes.com/enchanting-bruges-city-break-with-eurostar-or-eurotunnel-travel-hotel-de-medici-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
   bruges: true
+
+- title: Hotel Banks
+  id: hotel-banks
+  location: Antwerp, Belgium
+  description: Artistic, modern hotel in central Antwerp, close to museums and the Scheldt River - with breakfast, afternoon snacks and drinks, and late check-out included
+  price: 42
+  price-description: per person - based on 2 persons
+  saved: #
+  expires: 2019/01/21
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/81989/5cd2c926_f47d_454f_b96c_8d8a9c6105e5.jpg
+  link: https://www.secretescapes.com/hotel-banks-antwerp-belgium2/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+
+- title: Ghent River Hotel
+  id: ghent-river-hotel
+  location: Gent, Belgium
+  description: A converted factory and Renaissance house turned hotel in the quirky city of Ghent - with breakfast included
+  price: 44
+  price-description: per person - based on 2 persons
+  saved: #
+  expires: 2019/01/21
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/72725/eee859b7_118e_46b4_87cf_932a2f215459.jpg
+  link: https://www.secretescapes.com/ghent-river-hotel-gent-belgium1/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
