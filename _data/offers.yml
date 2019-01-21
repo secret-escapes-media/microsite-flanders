@@ -1,13 +1,15 @@
-- title: Eburon Hotel
-  id: eburon-hotel
-  location: Tongeren, Belgium
-  description: A former monastery turned chic boutique in Tongeren
-  price: 62
-  price-description: per room per night
-  saved: 53
-  expires: 2019/01/21
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/18181/3db0cc2c_1e6e_487b_9050_366358bb5ce0.jpg
-  link: https://www.secretescapes.com/eburon-hotel-tongeren-belgium-uk/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+
+- title: Elegant Bruges break with Eurostar or Eurotunnel travel
+  id: elegant-bruges-break-with-eurostar-or-eurotunnel-travel
+  location: Hotel Heritage, Belgium
+  description: An elegant 19th-century Bruges hotel with gourmet restaurant
+  price: 239
+  price-description: per person for 3 nights
+  saved: 30
+  expires: 2019/01/28
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/47484/ae63b3a0_315b_4db7_aba1_e981cf3cab68.jpg
+  link: https://www.secretescapes.com/bruges-break-with-eurostar-travel-hotel-heritage-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  
 
 - title: Enchanting Bruges city break with Eurostar or Eurotunnel travel
   id: enchanting-bruges-city-break-with-eurostar-or-eurotunnel-travel
@@ -19,26 +21,64 @@
   expires: 2019/01/21
   image: https://d1x3cbuht6sy0f.cloudfront.net/sales/20469/44b99678_6c15_462b_a16c_f664d896c9d4.jpg
   link: https://www.secretescapes.com/enchanting-bruges-city-break-with-eurostar-or-eurotunnel-travel-hotel-de-medici-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
-  bruges: true
+  
 
-- title: Hotel Banks
-  id: hotel-banks
-  location: Antwerp, Belgium
-  description: Artistic, modern hotel in central Antwerp, close to museums and the Scheldt River - with breakfast, afternoon snacks and drinks, and late check-out included
-  price: 42
-  price-description: per person - based on 2 persons
-  saved: #
+- title: Charming Bruges break
+  id: charming-bruges-break
+  location: Grand Hotel Casselbergh, Belgium
+  description: A fairytale getaway to an elegant Bruges hotel
+  price: 189
+  price-description: per person for 2 nights
+  saved: 31
   expires: 2019/01/21
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/81989/5cd2c926_f47d_454f_b96c_8d8a9c6105e5.jpg
-  link: https://www.secretescapes.com/hotel-banks-antwerp-belgium2/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/54691/58d99943_3f7a_4eba_ac59_df4e1af4d32b.jpg
+  link: https://www.secretescapes.com/charming-bruges-break-with-christmas-market-dates-grand-hotel-casselbergh-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  
 
 - title: Ghent River Hotel
   id: ghent-river-hotel
   location: Gent, Belgium
-  description: A converted factory and Renaissance house turned hotel in the quirky city of Ghent - with breakfast included
-  price: 44
-  price-description: per person - based on 2 persons
-  saved: #
+  description: Quirky converted factory in the riverside city of Ghent
+  price: 88
+  price-description: per room per night
+  saved: 35
   expires: 2019/01/21
   image: https://d1x3cbuht6sy0f.cloudfront.net/sales/72725/eee859b7_118e_46b4_87cf_932a2f215459.jpg
   link: https://www.secretescapes.com/ghent-river-hotel-gent-belgium1/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  
+
+- title: Eburon Hotel
+  id: eburon-hotel
+  location: Tongeren, Belgium
+  description: A former monastery turned chic boutique in Tongeren
+  price: 62
+  price-description: per room per night
+  saved: 53
+  expires: 2019/01/21
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/18181/3db0cc2c_1e6e_487b_9050_366358bb5ce0.jpg
+  link: https://www.secretescapes.com/eburon-hotel-tongeren-belgium-uk/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  
+
+- title: Hotel Banks
+  id: hotel-banks
+  location: Antwerp, Belgium
+  description: A modern hotel near Antwerp’s fashionable Meir Street&nbsp;
+  price: 84
+  price-description: per room per night
+  saved: 41
+  expires: 2019/01/21
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/81989/5cd2c926_f47d_454f_b96c_8d8a9c6105e5.jpg
+  link: https://www.secretescapes.com/hotel-banks-antwerp-belgium2/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  
+
+- title: Bruges sojourn with Eurostar or Eurotunnel travel
+  id: bruges-sojourn-with-eurostar-or-eurotunnel-travel
+  location: Hotel The Peellaert, Belgium
+  description: Fairytale charm at a historic hotel in the heart of Bruges
+  price: 139
+  price-description: per person for 2 nights
+  saved: 31
+  expires: 2019/01/28
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/41607/6be10c55_f30b_4880_96bd_867845a025db.jpg
+  link: https://www.secretescapes.com/bruges-sojourn-with-eurostar-or-eurotunnel-travel-hotel-the-peellaert-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  
