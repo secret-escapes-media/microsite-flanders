@@ -15,7 +15,7 @@
       {{ content }}
     </div>
 
-    {% unless page.id == "competition" or page.id == "offers" %}
+    {% unless page.id == "competition" or page.id == "offers" or page.id == "bruges" %}
       {% include page/promo-competition.html %}
     {% endunless %}
 

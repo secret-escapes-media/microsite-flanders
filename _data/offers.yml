@@ -1,43 +1,23 @@
-- title: Hotel Prinsenhof
-  id: hotel-prinsenhof
-  location: Bruges, Belgium
-  description: A charming and award-winning stay in the heart of Bruges
-  price: 142
-  price-description: per room per night
-  saved: 40
-  expires: 2019/02/04
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/34150/4d3a0a5e_1ca3_4c79_8e56_2b096b80fa47.jpg
-  link: https://www.secretescapes.com/hotel-prinsenhof-bruges-belgium-uk/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
-
-- title: Ghent River Hotel
-  id: ghent-river-hotel
-  location: Gent, Belgium
-  description: Quirky converted factory in the riverside city of Ghent
-  price: 88
-  price-description: per room per night
-  saved: 35
-  expires: 2019/01/30
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/72725/eee859b7_118e_46b4_87cf_932a2f215459.jpg
-  link: https://www.secretescapes.com/ghent-river-hotel-gent-belgium1/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
-
-- title: Hotel Banks
-  id: hotel-banks
-  location: Antwerp, Belgium
-  description: A modern hotel near Antwerp’s fashionable Meir Street&nbsp;
-  price: 84
-  price-description: per room per night
-  saved: 41
-  expires: 2019/02/04
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/81989/5cd2c926_f47d_454f_b96c_8d8a9c6105e5.jpg
-  link: https://www.secretescapes.com/hotel-banks-antwerp-belgium2/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+- title: Elegant Bruges break with Eurostar or Eurotunnel travel
+  id: elegant-bruges-break-with-eurostar-or-eurotunnel-travel
+  location: Hotel Aragon, Belgium
+  description: A picturesque Bruges break by the iconic Market Square
+  price: 139
+  price-description: per person for 2 nights
+  saved: 31
+  expires: 2019/02/11
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/49185/b6df3e4f_8c04_4972_a70a_d14ac64a3e2a.jpg
+  link: https://www.secretescapes.com/elegant-break-to-bruges-with-either-eurostar-or-eurotunnel-travel-hotel-aragon-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  bruges: true
 
 - title: 5* elegant Bruges break with Eurostar or Eurotunnel
   id: 5-elegant-bruges-break-with-eurostar-or-eurotunnel
   location: Hotel Dukes' Palace, Belgium
   description: Discover Bruges break with a grand five-star superior stay
-  price: 249
-  price-description: per person based on 2 people for 2 nights
-  saved: #
-  expires: 2019/02/04
+  price: 199
+  price-description: per person for 2 nights
+  saved: 31
+  expires: 2019/02/11
   image: https://d1x3cbuht6sy0f.cloudfront.net/sales/17110/dcc5aee6_436a_4dc2_8996_b6c74d88cf0d.jpg
   link: https://www.secretescapes.com/5-star-elegant-bruges-break-with-eurostar-or-eurotunnel-hotel-dukes-palace-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  bruges: true

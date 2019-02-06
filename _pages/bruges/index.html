@@ -5,7 +5,7 @@ title: Bruges
 nav: true
 nav-order: 3
 content-pages: true
-map: true
+map: false
 
 intro: Bruges is a beguiling medieval delight, a chocolate-box town filled with romantic scenes at every turn. It’s one of Europe’s best-preserved, old-world centres, a step-back-in-time, with an indulgent lifestyle to tap into and hidden depths that dive into a world of art and craftsmanship. Under the shadow of the (leaning!) Belfry, discover a maze of medieval streets, marvel at magnificent architecture, take a boat trip along the canal, and unpick a foodie paradise. Expect fine dining and Renaissance marvels, woven into the enviable lifestyle that this UNESCO World-Heritage treasure fosters.
 
@@ -87,4 +87,15 @@ pois:
   </div>
 </div>
 
-{% include page/promo-map.html %}
+<div class="container vpad--xxxl">
+  <h3 class="title title--xl text--center">Bruges offers</h3>
+  <div class="space--xl"></div>
+  <div class="row row--xl-6-6 row--gutters-lg">
+    {% include offer/variables.html %}
+    {% for offer in bruges-offers %}
+      <div class="col">
+        {% include offer/offer.html %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
