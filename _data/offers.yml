@@ -1,15 +1,3 @@
-- title: Elegant Bruges break with Eurostar or Eurotunnel travel
-  id: elegant-bruges-break-with-eurostar-or-eurotunnel-travel
-  location: Hotel Aragon, Belgium
-  description: A picturesque Bruges break by the iconic Market Square
-  price: 139
-  price-description: per person for 2 nights
-  saved: 31
-  expires: 2019/02/11
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/49185/b6df3e4f_8c04_4972_a70a_d14ac64a3e2a.jpg
-  link: https://www.secretescapes.com/elegant-break-to-bruges-with-either-eurostar-or-eurotunnel-travel-hotel-aragon-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
-  bruges: true
-
 - title: 5* elegant Bruges break with Eurostar or Eurotunnel
   id: 5-elegant-bruges-break-with-eurostar-or-eurotunnel
   location: Hotel Dukes' Palace, Belgium
@@ -17,7 +5,31 @@
   price: 199
   price-description: per person for 2 nights
   saved: 31
-  expires: 2019/02/11
+  expires: 2019/02/18
   image: https://d1x3cbuht6sy0f.cloudfront.net/sales/17110/dcc5aee6_436a_4dc2_8996_b6c74d88cf0d.jpg
   link: https://www.secretescapes.com/5-star-elegant-bruges-break-with-eurostar-or-eurotunnel-hotel-dukes-palace-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  bruges: true
+
+- title: Boutique Bruges break with Eurostar or Eurotunnel travel
+  id: boutique-bruges-break-with-eurostar-or-eurotunnel-travel
+  location: Hotel Prinsenhof, Belgium
+  description: A charming escape to a quaint, award-winning hotel in central Bruges, including champagne breakfast, a choice of Eurotunnel or Eurostar travel and discounted single rates
+  price: 189
+  price-description: per person based on 2 people for 2 nights
+  saved: 40
+  expires: 2019/02/18
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/50246/55357804_1b1e_49f5_8560_030f6da366d6.jpg
+  link: https://www.secretescapes.com/boutique-bruges-break-with-eurostar-or-eurotunnel-travel-hotel-prinsenhof-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
+  bruges: true
+
+- title: Hotel Dukes Palace Bruges
+  id: hotel-dukes-palace-bruges
+  location: Bruges, Belgium
+  description: A plush five-star Bruges break at a grand 15th-century former ducal residence, includes breakfast and spa access
+  price: 74
+  price-description: per person based on 2 people per room
+  saved: 33
+  expires: 2019/02/18
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/71455/3562316d_9545_4b13_990c_ec2a2c8971af.jpg
+  link: https://www.secretescapes.com/hotel-dukes-palace-bruges-bruges-belgium/sale?utm_source=SE_media&utm_medium=Flanders&utm_campaign=January2019
   bruges: true
